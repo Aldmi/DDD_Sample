@@ -4,7 +4,7 @@ using System.Linq.Expressions;
 using System.Threading.Tasks;
 using Shared.Kernel.ForDomain;
 
-namespace Database.Abstract.Abstract
+namespace Shared.Database.Abstract.Abstract
 {
     /// <summary>
     /// Абстрактный репозиторий.

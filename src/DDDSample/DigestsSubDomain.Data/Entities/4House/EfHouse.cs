@@ -1,8 +1,8 @@
 ﻿using System.ComponentModel.DataAnnotations.Schema;
-using Database.Abstract;
 using Digests.Core.Model._4House;
 using Digests.Data.EfCore.Entities._4Company;
 using Newtonsoft.Json;
+using Shared.Database.Abstract;
 
 namespace Digests.Data.EfCore.Entities._4House
 {

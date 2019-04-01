@@ -5,11 +5,10 @@ using System.Linq.Expressions;
 using System.Threading.Tasks;
 using AutoMapper;
 using AutoMapper.Extensions.ExpressionMapping;
-using Database.Abstract;
-using Database.Abstract.Abstract;
 using Microsoft.EntityFrameworkCore;
+using Shared.Database.Abstract;
 
-namespace Database.EFCore
+namespace Shared.Database.EFCore
 {
     /// <summary>
     /// Базовый тип репозитория для EntitiFramework

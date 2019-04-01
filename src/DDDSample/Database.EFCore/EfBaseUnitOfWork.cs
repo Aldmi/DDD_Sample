@@ -2,7 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using Shared.Kernel.Enums;
 
-namespace Database.EFCore
+namespace Shared.Database.EFCore
 {
     public class EfBaseUnitOfWork
     {

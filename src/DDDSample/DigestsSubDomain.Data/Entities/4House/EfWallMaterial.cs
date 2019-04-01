@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations.Schema;
-using Database.Abstract;
+using Shared.Database.Abstract;
 
 namespace Digests.Data.EfCore.Entities._4House
 {

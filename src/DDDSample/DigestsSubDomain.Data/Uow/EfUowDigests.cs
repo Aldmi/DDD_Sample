@@ -1,9 +1,9 @@
 ﻿using System;
-using Database.EFCore;
 using Digests.Data.Abstract;
 using Digests.Data.EfCore.DbContext;
 using Digests.Data.EfCore.Mapper;
 using Digests.Data.EfCore.Repositories;
+using Shared.Database.EFCore;
 
 namespace Digests.Data.EfCore.Uow
 {

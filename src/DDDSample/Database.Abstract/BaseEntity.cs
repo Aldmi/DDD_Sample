@@ -1,4 +1,4 @@
-﻿namespace Database.Abstract
+﻿namespace Shared.Database.Abstract
 {
     public abstract class BaseEntity
     {
