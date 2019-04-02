@@ -31,6 +31,7 @@ namespace Digests.Data.EfCore.Mapper
                         .ConstructUsing(src =>  WallMaterial.Create(src.Name, src.IsShared).Value)
                         .ForMember(dest => dest.Name, opt => opt.MapFrom(src => src.Name))
                         .ForMember(dest => dest.IsShared, opt => opt.MapFrom(src => src.IsShared));
+
                     cfg.CreateMap<WallMaterial, EfWallMaterial>()
                         .ConstructUsing(src => new EfWallMaterial{Name = src.Name, IsShared = src.IsShared})
                         .ForMember(dest => dest.Name, opt => opt.MapFrom(src => src.Name))

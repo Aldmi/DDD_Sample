@@ -32,7 +32,7 @@ namespace Digests.Core.Model._4Company
             get => _houses;
             private set => _houses = value as List<House>; //для маппинга
         }
-        #endregion
+         #endregion
 
 
 
