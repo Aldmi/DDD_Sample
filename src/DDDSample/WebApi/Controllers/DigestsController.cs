@@ -11,20 +11,20 @@ namespace WebApi.Controllers
     [ApiController]
     public class DigestsController : ControllerBase
     {
-        private readonly IUnitOfWorkDigests _unitOfWorkDigests;
         private readonly DigestsService _digestsService;
 
 
 
-        public DigestsController(IUnitOfWorkDigests unitOfWorkDigests, DigestsService digestsService)
+        public DigestsController( DigestsService digestsService)
         {
-            _unitOfWorkDigests = unitOfWorkDigests;
             _digestsService = digestsService;
         }
 
 
 
-        // GET
+        #region Methods
+
+        //GET api/Digests
         [HttpGet]
         public async Task<IActionResult> GetCompanys()
         {
@@ -33,11 +33,14 @@ namespace WebApi.Controllers
         }
 
 
+        //POST api/Digests
         [HttpPost]
         public async Task<IActionResult> Post([FromBody] CompanyDto companyDto)
         {
-           var res= await _digestsService.AddNewCompany(companyDto);
-           return res.IsFailure ? (IActionResult) BadRequest(res.Error) : Ok();
+            var res= await _digestsService.AddNewCompany(companyDto);
+            return res.IsFailure ? (IActionResult) BadRequest(res.Error) : Ok();
         }
+
+        #endregion
     }
 }
